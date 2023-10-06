@@ -10,5 +10,6 @@
 		* main
 			* section
 		* footer
+	* Engir stórir stafir í class nöfnum
 
 Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
