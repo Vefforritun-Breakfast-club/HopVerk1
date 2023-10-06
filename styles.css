@@ -22,6 +22,7 @@ html {
 	--gutter: 15px;
 	--border_radius: 5px;
 	--gap_size: 30px;
+	/* column width should be 90px at 1440p */
 
 	--site_max_width: 1440px;
 	/* Subject to change*/
