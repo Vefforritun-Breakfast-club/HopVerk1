@@ -4,6 +4,7 @@
 * Punkar varðandi samræmi kóða.
 	* tab er 4 spaces
 	* Ekki nota prettier heldur HTML Language features við formatting
+		* Hægt að stilla HTML sem default meða að gera format document with og gera configure default.
 	* Hafa nöfn skýr og lýsandi
 	* CSS skal vera uppsett í hluta eftir uppsetningu síðu t.d
 		* header
@@ -33,3 +34,5 @@ Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 		* Hvert section er skipt með skálínu
 			* hvítt box utan um vörur með rúnuðum köntum og stórum takka
 		* Botn síðu
+		* Skalanleiki
+	* Alls ekki tæmandi listi og gæti verið gotta að bæta við
