@@ -7,10 +7,15 @@
 		* Hægt að stilla HTML sem default meða að gera format document with og gera configure default.
 	* Hafa nöfn skýr og lýsandi
 	* CSS skal vera uppsett í hluta eftir uppsetningu síðu t.d
-		* header
-		* main
-			* section
-		* footer
+		* Settings and pre-config
+		* body == top2bottom
+		* top
+			* header
+		* middle
+			* main
+				* section
+		* bottom	
+			* footer
 	* Engir stórir stafir í class nöfnum
 	* W3C validatea kóða áður en hann er commitaður.
 	* Myndir skulu notast við figure tag
@@ -35,4 +40,5 @@ Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 			* hvítt box utan um vörur með rúnuðum köntum og stórum takka
 		* Botn síðu
 		* Skalanleiki
+			* Hönnum fyrst desktop stærð og aðlögum svo.
 	* Alls ekki tæmandi listi og gæti verið gotta að bæta við
