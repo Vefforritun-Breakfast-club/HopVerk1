@@ -11,5 +11,10 @@
 			* section
 		* footer
 	* Engir stórir stafir í class nöfnum
+	* W3C validatea kóða áður en hann er commitaður.
+
+* Sniðug tól
+	* Hægt að nota codespaces til að skrifa kóða í vscode og commita á repositry
+	* Mæli með emmet wrap til að bæta við tag utan um texta block
 
 Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
