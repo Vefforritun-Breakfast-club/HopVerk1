@@ -87,6 +87,13 @@ img {}
 	background-color: var(--white);
 	border-radius: var(--border_radius);
 }
+.box_inherit {
+	background-color: transparent;
+	display: flex;
+	gap: var(--gap_size);
+	margin: 0 var(--offset);
+
+}
 
 /* 						body					 */
 .top2bottom {
@@ -95,7 +102,9 @@ img {}
 }
 
 /* 						top 					*/
-.top {}
+.top {
+	background-image: url("./images/Cable_Background.png");
+}
 
 .navigation {
 	display: flex;
