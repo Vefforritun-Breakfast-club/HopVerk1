@@ -1,20 +1,124 @@
-/* font */
+/* Reset og border-box á allt */
+* {
+	margin: 0;
+	padding: 0;
+}
 
-/* settings */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* 						font						 */
+
+/* logo font er Lora, 700 */
+/* restin er Lato 400 */
+
+/* 						settings 						*/
 :root {
-  --latte: #e1cec2;
-  --dark-brown: #3c2a1e;
-  --brown: #6f4e37;
+	/* sizes */
+	--gutter: 15px;
+	--border_radius: 5px;
+	--gap_size: 30px;
+	/* column width should be 90px at 1440p */
+
+	--site_max_width: 1440px;
+	/* Subject to change*/
+
+	/* colors */
+	--latte: #e1cec2;
+	--dark-brown: #3c2a1e;
+	--brown: #6f4e37;
+	--white: #ffffff;
 }
 /*TEst commit*/
 /* grid overlay */
 
-/* global */
+/* 						global						 */
 
-/* top */
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 
-/* middle */
+html,
+input,
+select,
+button {}
 
-/* bottom */
+li {
+	list-style: none;
+}
 
-/* scaling */
+h1,
+h2,
+h3 {}
+
+a {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: none;
+}
+
+img {}
+
+/* 						box 					*/
+
+.box_container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap_size);
+	padding: var(--gutter);
+}
+
+.box {
+	flex: 1;
+	flex-basis: 15%;
+	background-color: var(--white);
+	border-radius: var(--border_radius);
+}
+
+/* 						body					 */
+.top2bottom {
+	max-width: var(--site_max_width);
+	margin: 0 auto;
+}
+
+/* 						top 					*/
+.top {}
+
+.navigation {
+	display: flex;
+	gap: var(--gap_size);
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.site_menu {
+	display: flex;
+	gap: var(--gap_size);
+}
+
+/* 						middle 					*/
+.middle {}
+
+.latte_slice {
+	/* max-width: calc(var(--site_max_width) - 2*var(--gutter)); */
+	background-color: var(--latte);
+	margin: 0 var(--gutter);
+}
+
+/* 						bottom 					*/
+
+/* 						scaling 				*/
