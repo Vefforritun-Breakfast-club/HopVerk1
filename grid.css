@@ -30,7 +30,7 @@
     margin-left: auto;
     
     width: calc(100% - (2 * var(--offset)));
-    max-width: var(--max-width);
+    max-width: var(--site_max_width);
     min-height: 100vh;
     background-image: var(--grid-background-columns);
     background-size: var(--grid-background-width) 100%;
