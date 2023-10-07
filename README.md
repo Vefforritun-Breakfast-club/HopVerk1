@@ -34,7 +34,7 @@ Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 		* Pöntunarsíða
 		* síðu fyrir vöru
 	* Smíða css
-		* Smíða overlay grid
+		* Smíða overlay grid ( [x] )
 		* Toppur á síðu hefur mynd sem bakgrunn
 		* Hvert section er skipt með skálínu
 			* hvítt box utan um vörur með rúnuðum köntum og stórum takka
@@ -76,7 +76,7 @@ Please let me know if anyone has any ideas.
 		* Order page
 		* Page for a product
 	* Build CSS
-		* Create overlay grid
+		* Create overlay grid ( [x] )
 		* The top of the page has an image as a background
 		* Each section is divided by a diagonal line
 			* A white box around products with rounded edges and a big button
