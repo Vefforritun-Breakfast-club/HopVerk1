@@ -1,5 +1,8 @@
 /* https://css-tricks.com/building-css-grid-overlay/ */
 :root {
+	--offset: 15px;
+	--gutter: 30px;
+	--columns: 12;
     --grid-color: hsla(0, 75%, 75%, 0.25);
     --grid-repeating-width: calc(100% / var(--columns));
     --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
@@ -30,7 +33,7 @@
     margin-left: auto;
     
     width: calc(100% - (2 * var(--offset)));
-    max-width: var(--max-width);
+    max-width: calc(var(--site_max_width) - (2 * var(--offset)));
     min-height: 100vh;
     background-image: var(--grid-background-columns);
     background-size: var(--grid-background-width) 100%;

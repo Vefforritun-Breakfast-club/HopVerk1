@@ -22,9 +22,10 @@ html {
 /* 						settings 						*/
 :root {
 	/* sizes */
-	--gutter: 15px;
+	--offset: 15px;
 	--border_radius: 5px;
 	--gap_size: 30px;
+	--font_size: 16px;
 	/* column width should be 90px at 1440p */
 
 	--site_max_width: 1440px;
@@ -35,8 +36,9 @@ html {
 	--dark-brown: #3c2a1e;
 	--brown: #6f4e37;
 	--white: #ffffff;
+	--light: #FEFEFE;
 }
-/*TEst commit*/
+
 /* grid overlay */
 
 /* 						global						 */
@@ -58,12 +60,15 @@ select,
 button {}
 
 li {
+	font-size: var(--font_size);
 	list-style: none;
 }
 
 h1,
 h2,
-h3 {}
+h3 {
+	margin: 1em 0;
+}
 
 a {
 	color: inherit;
@@ -73,13 +78,19 @@ a {
 
 img {}
 
+.width100p {
+	width: 100%;
+}
+
 /* 						box 					*/
 
 .box_container {
+	margin: 0 auto;
+	max-width: var(--site_max_width);
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap_size);
-	padding: var(--gutter);
+	padding: var(--offset);
 }
 
 .box {
@@ -89,14 +100,35 @@ img {}
 	border-radius: var(--border_radius);
 }
 
+.box_transparent {
+	flex: 1;
+	background-color: transparent;
+	display: flex;
+	gap: var(--gap_size);
+	/* margin: 0 var(--offset); */
+	color: inherit;
+
+}
+	
+
+
 /* 						body					 */
 .top2bottom {
-	max-width: var(--site_max_width);
+	display: flex;
+	flex-direction: column;
+	/* max-width: var(--site_max_width); */
+	gap: var(--gap_size);
 	margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
 }
 
 /* 						top 					*/
-.top {}
+.top {
+	/* max-width: var(--site_max_width); */
+	/* margin: 0 auto; */
+	background-image: url("./images/Cable_Background.png");
+}
 
 .navigation {
 	display: flex;
@@ -111,14 +143,39 @@ img {}
 }
 
 /* 						middle 					*/
-.middle {}
+.middle {
+	max-width: var(--site_max_width);
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
 
 .latte_slice {
-	/* max-width: calc(var(--site_max_width) - 2*var(--gutter)); */
+	/* max-width: calc(var(--site_max_width) - 2*var(--offset)); */
 	background-color: var(--latte);
-	margin: 0 var(--gutter);
+	/* margin: 0 var(--offset); */
 }
 
 /* 						bottom 					*/
+.bottom {
+	background-color: var(--dark-brown);
+	color: var(--light);
+	line-height: 1.5em;
+}
+
+.footer_heading {
+	margin: 0.25em 0;
+	border-bottom: 2px var(--latte) solid;
+	/* line-height: 3em; */
+	font-size: 2em;
+
+}
+
+.postscript {
+	text-align: center;
+	line-height: 1em;
+	border-top: 1px #6f4e37 solid;
+}
 
 /* 						scaling 				*/
