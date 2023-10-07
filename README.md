@@ -78,7 +78,7 @@ Please let me know if anyone has any ideas.
 	* Build CSS
 		* Create overlay grid
 		* The top of the page has an image as a background
-		* Each section is divided by a line
+		* Each section is divided by a diagonal line
 			* A white box around products with rounded edges and a big button
 		* Page footer
 		* Scalability

@@ -22,7 +22,7 @@ html {
 /* 						settings 						*/
 :root {
 	/* sizes */
-	--gutter: 15px;
+	--offset: 15px;
 	--border_radius: 5px;
 	--gap_size: 30px;
 	/* column width should be 90px at 1440p */
@@ -78,7 +78,7 @@ img {}
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap_size);
-	padding: var(--gutter);
+	padding: var(--offset);
 }
 
 .box {
@@ -110,12 +110,16 @@ img {}
 }
 
 /* 						middle 					*/
-.middle {}
+.middle {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
 
 .latte_slice {
-	/* max-width: calc(var(--site_max_width) - 2*var(--gutter)); */
+	/* max-width: calc(var(--site_max_width) - 2*var(--offset)); */
 	background-color: var(--latte);
-	margin: 0 var(--gutter);
+	/* margin: 0 var(--offset); */
 }
 
 /* 						bottom 					*/
