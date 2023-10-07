@@ -1,5 +1,6 @@
 # HopVerk1
 
+# We will start with the front page layout and then start on the rest
 
 * Punkar varðandi samræmi kóða.
 	* tab er 4 spaces
