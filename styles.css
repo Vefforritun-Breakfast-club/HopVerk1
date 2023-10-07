@@ -36,6 +36,7 @@ html {
 	--dark-brown: #3c2a1e;
 	--brown: #6f4e37;
 	--white: #ffffff;
+	--light: #FEFEFE;
 }
 
 /* grid overlay */
@@ -159,13 +160,13 @@ img {}
 /* 						bottom 					*/
 .bottom {
 	background-color: var(--dark-brown);
-	color: var(--latte);
+	color: var(--light);
 	line-height: 1.5em;
 }
 
 .footer_heading {
 	margin: 0.25em 0;
-	border-bottom: 1px var(--latte) solid;
+	border-bottom: 2px var(--latte) solid;
 	/* line-height: 3em; */
 	font-size: 2em;
 
@@ -174,6 +175,7 @@ img {}
 .postscript {
 	text-align: center;
 	line-height: 1em;
+	border-top: 1px #6f4e37 solid;
 }
 
 /* 						scaling 				*/
