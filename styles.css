@@ -36,6 +36,7 @@ html {
 	--brown: #6f4e37;
 	--white: #ffffff;
 }
+
 /* grid overlay */
 
 /* 						global						 */
@@ -87,22 +88,31 @@ img {}
 	background-color: var(--white);
 	border-radius: var(--border_radius);
 }
-.box_inherit {
+
+.box_transparent {
 	background-color: transparent;
 	display: flex;
 	gap: var(--gap_size);
 	margin: 0 var(--offset);
+	color: inherit;
 
 }
 
 /* 						body					 */
 .top2bottom {
-	max-width: var(--site_max_width);
+	display: flex;
+	flex-direction: column;
+	/* max-width: var(--site_max_width); */
+	gap: var(--gap_size);
 	margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
 }
 
 /* 						top 					*/
 .top {
+	/* max-width: var(--site_max_width); */
+	/* margin: 0 auto; */
 	background-image: url("./images/Cable_Background.png");
 }
 
@@ -120,6 +130,8 @@ img {}
 
 /* 						middle 					*/
 .middle {
+	max-width: var(--site_max_width);
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
@@ -132,5 +144,8 @@ img {}
 }
 
 /* 						bottom 					*/
-
+.bottom {
+	background-color: var(--dark-brown);
+	color: var(--latte);
+}
 /* 						scaling 				*/
