@@ -36,3 +36,45 @@ Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 		* Botn síðu
 		* Skalanleiki
 	* Alls ekki tæmandi listi og gæti verið gotta að bæta við
+
+	Of course! Here's the translation in the same format:
+
+---
+
+# Homework1--English reference.
+
+* Points regarding code consistency:
+	* A tab is 4 spaces.
+	* Don't use prettier, instead use HTML Language features for formatting.
+		* You can set HTML as default by doing "format document with" and then "configure default."
+	* Have clear and descriptive names.
+	* CSS should be set up in sections according to the page layout e.g.:
+		* header
+		* main
+			* section
+		* footer
+	* No capital letters in class names.
+	* W3C validate the code before committing it.
+	* Images should be used with the figure tag.
+
+* Useful tools:
+	* You can use codespaces to write code in vscode and commit to the repository.
+	* I recommend using the emmet wrap to add a tag around a text block.
+
+Please let me know if anyone has any ideas.
+
+* Things that need to be done:
+	* Create a basic HTML file with correct tags.
+		* Front page
+		* Product list page
+			* (Question: Is it possible to make a single product page and then tag each product to see only products that are tagged as 'new' or 'on offer'?)
+		* Order page
+		* Page for a product
+	* Build CSS
+		* Create overlay grid
+		* The top of the page has an image as a background
+		* Each section is divided by a line
+			* A white box around products with rounded edges and a big button
+		* Page footer
+		* Scalability
+	* This is not an exhaustive list, and more might be added.
