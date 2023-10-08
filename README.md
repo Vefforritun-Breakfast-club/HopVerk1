@@ -3,8 +3,7 @@
 * We will start with the front page layout perfect it and then move on to the rest
 	* Go on monday
    		* if u see a task u can/want to do
-       			* do it
-
+     			* do it
        		* if u see something missing from the page compared to the figma file
            		* add the task
                			* if u can/want do it
