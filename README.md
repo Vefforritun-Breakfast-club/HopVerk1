@@ -7,6 +7,7 @@
        		* if u see something missing from the page compared to the figma file
            		* add the task
                			* if u can/want do it
+               				* do it
 	* All content. Widths, fonts, font size, font line height, is all on the figma.
    		* Being pixel perfect should be easier than just a random png file.
 	
