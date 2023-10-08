@@ -52,4 +52,4 @@ Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 		* Botn síðu
 		* Skalanleiki
 			* Hönnum fyrst desktop stærð og aðlögum svo.
-	* Alls ekki tæmandi listi og gæti verið gotta að bæta við
+	* Alls ekki tæmandi listi og gæti verið gotta að bæta við.
