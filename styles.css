@@ -130,11 +130,29 @@ img {}
 	background-image: url("./images/Cable_Background.png");
 }
 
+/* 	Header,Navivigation,Menu starts here	*/
+
+header{
+
+	text-align: center	;
+	width: 100%;
+	z-index: 1000;
+
+}
+
+.logo{
+	display: inline-block;
+}
+
+
+
+/*			Navigation			*/
+
 .navigation {
 	display: flex;
 	gap: var(--gap_size);
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: center;  
 }
 
 .site_menu {
