@@ -4,6 +4,7 @@
 	* Go on monday
    		* if u see a task u can/want to do
        			* do it
+
        		* if u see something missing from the page compared to the figma file
            		* add the task
                			* if u can/want do it
