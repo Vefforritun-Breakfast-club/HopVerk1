@@ -136,14 +136,14 @@ img {
 
 /* 	Header,Navivigation,Menu starts here	*/
 
-header{
-	border: pink solid;
-	display: flex;
-	flex-direction: column;
-	text-align: center	;
+.top {
+	/* instead of using the header tag use the .top div element */
+	/* navigation and header are seperate elements part of the top of the page. */
+	/* nice job with the logo btw. */
 	width: 100%;
-	z-index: 1000;
-
+	/* z-index: 1000; this removes the grid from the top of the page do you want that?*/
+	
+	/* what you need to do is align the items to the grid */
 }
 
 
@@ -168,9 +168,6 @@ nav{
 	border: green solid;
 }
 
-ul li{
-	margin-bottom: var(--spacing);
-}
 
 
 /*			Navigation			*/
