@@ -26,6 +26,7 @@ html {
 	--border_radius: 5px;
 	--gap_size: 30px;
 	--font_size: 16px;
+	--spacing: 1rem;
 	/* column width should be 90px at 1440p */
 
 	--site_max_width: 1440px;
@@ -40,6 +41,7 @@ html {
 }
 
 /* grid overlay */
+
 
 /* 						global						 */
 
@@ -76,7 +78,9 @@ a {
 	text-decoration: none;
 }
 
-img {}
+img {
+	max-width: 100%;
+}
 
 .width100p {
 	width: 100%;
@@ -133,17 +137,40 @@ img {}
 /* 	Header,Navivigation,Menu starts here	*/
 
 header{
-
+	border: pink solid;
+	display: flex;
+	flex-direction: column;
 	text-align: center	;
 	width: 100%;
 	z-index: 1000;
 
 }
 
-.logo{
-	display: inline-block;
+
+nav{
+	border: #3c2a1e solid ;
+	display: none;
 }
 
+.logo{
+	border: purple solid;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 60px;
+
+}
+.logo > h1 {
+	height: 60px;
+}
+.logo > img{
+	height: 60px;
+	border: green solid;
+}
+
+ul li{
+	margin-bottom: var(--spacing);
+}
 
 
 /*			Navigation			*/
