@@ -215,6 +215,11 @@ nav{
 }
 
 .postscript {
+	display: grid;
+	grid-template-columns: repeat(12 grid-template-columns);
+	gap: var(--gap_size);
+	max-width: calc(var(--site_max_width)-2*var(--offset));
+
 	text-align: center;
 	line-height: 1em;
 	border-top: 1px #6f4e37 solid;
