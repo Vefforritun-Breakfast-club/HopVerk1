@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../grid.css">
-    <link rel="stylesheet" href="../vara-css.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
-  </head>
+<html lang="is">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../grid.css">
+		<link rel="stylesheet" href="../styles.css">
+		<meta name="description" content="Forsíða Tæknibúðarinar allt splunkunýtt og fullt af tilboðum.">
+		<meta property="og:title" content="Tæknibúðin">
+		<meta property="og:description" content="Tilboð hjá Tæknibúðinni">
+		<!-- <meta property="og:image" content="./myndir/sharing.jpg"> set eh sniðugt hérna seinna -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tæknibúðin</title>
+	</head>
   <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <div>
-                        <li>
-                            <img src="../images/Logo.png" alt="" />
-                        </li>
-                    </div>
-                    <li class="logo"> 
-                        Tæknibúðin               
-                    </li>
-                    <li class="search-icon">
-                        <input type="search" id="site-search" name="q" />
-                        <label for="" class="icon">
-                            <span class="material-icons">search</span>
-                        </label>
-                    </li>
-                    <div class="items">
-                        <li><a href="#">Nýyar vörur</a></li>
-                        <li><a href="#">Tilboðsvörur</a></li>
-                        <li><a href="#">Allar vörur</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+	<div class="top2bottom">
+		<div class="top">
+			<a href="#efni" class="sr-only">Tæknibúðin,Beint í efnið.</a>
 
-        <main>
+			<div class="logo">
+				<svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M26.2269 16.5829C26.2269 16.1307 26.38 15.6784 26.38 15.0754C26.38 14.4724 26.38 14.0201 26.2269 13.5678L29.4404 11.005C29.7465 10.7035 29.7465 10.402 29.5934 10.1005L26.533 4.82412C26.38 4.67337 26.0739 4.52261 25.6148 4.67337L21.7893 6.1809C21.0242 5.57789 20.106 5.12563 19.1879 4.67337L18.5758 0.753769C18.7288 0.301508 18.2697 0 17.9637 0H11.8428C11.5367 0 11.0777 0.301508 11.0777 0.603015L10.4656 4.67337C9.54745 4.97487 8.78233 5.57789 7.8642 6.1809L4.19165 4.67337C3.73258 4.52261 3.42653 4.67337 3.12049 4.97487L0.0600316 10.2513C-0.0929912 10.402 0.0600316 10.8543 0.366077 11.1558L3.57956 13.5678C3.57956 14.0201 3.42653 14.4724 3.42653 15.0754C3.42653 15.6784 3.42653 16.1307 3.57956 16.5829L0.366077 19.1457C0.0600316 19.4472 0.0600316 19.7487 0.213054 20.0503L3.27351 25.3266C3.42653 25.4774 3.73258 25.6281 4.19165 25.4774L8.01722 23.9698C8.78233 24.5729 9.70047 25.0251 10.6186 25.4774L11.2307 29.397C11.2307 29.6985 11.5367 30 11.9958 30H18.1167C18.4228 30 18.8818 29.6985 18.8818 29.397L19.4939 25.4774C20.4121 25.0251 21.3302 24.5729 22.0953 23.9698L25.9209 25.4774C26.2269 25.6281 26.686 25.4774 26.839 25.1759L29.8995 19.8995C30.0525 19.598 30.0525 19.1457 29.7465 18.995L26.2269 16.5829ZM14.9032 20.3518C11.9958 20.3518 9.54745 17.9397 9.54745 15.0754C9.54745 12.2111 11.9958 9.799 14.9032 9.799C17.8107 9.799 20.259 12.2111 20.259 15.0754C20.259 17.9397 17.8107 20.3518 14.9032 20.3518Z"
+						fill="black" />
+				</svg>
+				<h1>Tæknibúðin</h1>
+			</div>
+			<nav>
+				<input type="search" id="site-search" name="q">
+				<ul>
+					<li><a href="#">Nýjar vörur</a></li>
+					<li><a href="#">Tilboðsvörur</a></li>
+					<li><a href="#">Allar vörur</a></li>
+				</ul>
+			</nav>
+			<header class="box_container">
+				<div>
+					<h1>Tilboðsvika</h1>
+					<p>Keyptu græjurnar okkar</p>
+				</div>
+			</header>
+		</div>
+
+        <main id="efni" class="middle">
           <section>
             <div class="vara-content-section-1">
-              <div><img src="../images/Motherboard.png" alt="" /></div>
+				<figure>
+					<img src="../images/Motherboard.png" alt="">
+					<figcaption>
+						<h2>Tæknilegt móðurborð</h2>
+					</figcaption>
+				</figure>
               <div>
-                <h2>Tæknilegt móðurborð</h2>
                 <div>
                   <p>Nýtt</p>
                   <p>Takmarkað magn</p>
@@ -93,8 +101,45 @@
             </div>
           </section>
         </main>
-        <footer>
-        </footer>
-          </body>
-    </div>
+		<footer class="bottom">
+			<div class="box_container">
+				<section class="box_transparent">
+					<div class="width100p">
+						<h3 class="footer_heading">OPNUNARTÍMI</h3>
+						<ol>
+							<li>Opið alla virka daga frá <time datetime="09:00">09:00</time>-<time
+									datetime="18:00">18:00</time>
+							</li>
+							<li>Opið á laugardögum frá <time datetime="12:00">09:00</time>-<time
+									datetime="16:00">18:00</time></li>
+							<li>Lokað á sunnudögum</li>
+						</ol>
+					</div>
+				</section>
+				<section class="box_transparent">
+					<div class="width100p">
+						<h3 class="footer_heading">HAFÐU SAMBAND</h3>
+						<ul>
+							<li>Skiptiborð: <a href="tel:2344568">234-4568</a></li>
+							<li><a href="mailto:thjonusta@example.org">thjonusta@example.org</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="box_transparent">
+					<div class="width100p">
+						<h3 class="footer_heading">ANNAÐ</h3>
+						<ul>
+							<li>Rekja sendingu</li>
+							<li>Skilaréttur</li>
+							<li>Um okkur</li>
+							<li>Störf</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="postscript">
+				<p>&copy; 2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
+			</div>
+		</footer>
+	</div>
 </html>
