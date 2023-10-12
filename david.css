@@ -1,9 +1,11 @@
-/* https://css-tricks.com/building-css-grid-overlay/ */
+
+
+
 :root {
 	--offset: 15px;
 	--gutter: 30px;
 	--columns: 12;
-    --grid-color: hsla(0, 0%, 0%, 0.05);
+    --grid-color: hsla(125, 67%, 51%, 0.25);
     --grid-repeating-width: calc(100% / var(--columns));
     --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
     --grid-background-width: calc(100% + var(--gutter));
@@ -14,13 +16,13 @@
       transparent var(--grid-column-width),
       transparent var(--grid-repeating-width)
     );
-  }
-  
-  html {
+}
+
+html {
     position: relative;
-  }
+}
   
-  html::before {
+html::before {
     content: '';
   
     position: absolute;
@@ -39,4 +41,24 @@
     background-size: var(--grid-background-width) 100%;
     z-index: 1000;
     pointer-events: none;
-  }
+}
+
+
+
+/* Reset og border-box á allt */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+

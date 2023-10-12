@@ -1,13 +1,10 @@
 # HopVerk1
 
-* We will start with the front page layout perfect it and then move on to the rest
-* Go on monday
-	* if u see a task u can/want to do
-  		* do it
-	* if u see something missing from the page compared to the figma file
-		* add the task
-			* if u can/want do it
-				* do it
+* Everyone has a .css file.
+	* Uncomment the style link sheet comment and put your name in the .css name
+	* pick a .html you want to work on
+	* if u need help. use discord, email. whatever
+
 * All content. Widths, fonts, font size, font line height, is all on the figma.
 	*  Being pixel perfect should be easier than just a random png file.
 	
@@ -19,14 +16,14 @@
 	* Hafa nöfn skýr og lýsandi
 	* CSS skal vera uppsett í hluta eftir uppsetningu síðu t.d
 		* Settings and pre-config
-		* body == top2bottom
-		* top
-			* header
-		* middle
-			* main
-				* section
-		* bottom	
-			* footer
+		* top2bottom
+			* top
+				* header
+			* middle
+				* main
+					* section
+			* bottom	
+				* footer
 	* Engir stórir stafir í class nöfnum
 	* W3C validatea kóða áður en hann er commitaður.
 	* Myndir skulu notast við figure tag
@@ -37,19 +34,3 @@
 
 Endilega láta heyra í sér ef menn hafa einhverjar hugmyndir.
 
-* Hlutir sem þarf að gera
-	* Smíða grunn html skjal með réttu tögum
-		* Forsíða
-		* vörulista síðu 
-			* ( Spurning hvort það sé hægt að gera eina vöru síðu og tagga síðan hverja vöru sjá svo bara vörur sem eru taggaðar sem 'nyjar' eða 'tilboðs')
-		* Pöntunarsíða
-		* síðu fyrir vöru
-	* Smíða css
-		* Smíða overlay grid ( [x] )
-		* Toppur á síðu hefur mynd sem bakgrunn
-		* Hvert section er skipt með skálínu
-			* hvítt box utan um vörur með rúnuðum köntum og stórum takka
-		* Botn síðu
-		* Skalanleiki
-			* Hönnum fyrst desktop stærð og aðlögum svo.
-	* Alls ekki tæmandi listi og gæti verið gotta að bæta við.
