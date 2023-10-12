@@ -205,7 +205,7 @@ img {
 		"middle"
 		"bottom";
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto minmax(0,270px);
+	grid-template-rows: auto auto minmax(0, 270px);
 	align-items: center;
 	padding: 0 0;
 	justify-items: center;
@@ -248,6 +248,7 @@ img {
 	background-position: top center;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
 }
+
 .top {
 	display: flex;
 	width: 100%;
@@ -256,6 +257,7 @@ img {
 	position: relative;
 	grid-column-end: span 1;
 }
+
 .head {
 	grid-column-end: span 12;
 	text-align: center;
@@ -336,6 +338,11 @@ img {
 	height: 50px;
 }
 
+.link_menu_button {
+	display: none;
+	width: 0;
+	height: 0;
+}
 
 /* 						middle 					*/
 .middle {
