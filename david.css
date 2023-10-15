@@ -61,4 +61,10 @@ html {
 	box-sizing: inherit;
 }
 
+.span_six{
+    grid-column-end: span 6;
+}
 
+.vara-content-section-1{
+    grid-column: 7 / 13;
+}
