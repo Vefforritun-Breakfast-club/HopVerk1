@@ -61,10 +61,20 @@ html {
 	box-sizing: inherit;
 }
 
-.span_six{
-    grid-column-end: span 6;
+img{
+    width: 100%;
 }
 
-.vara-content-section-1{
-    grid-column: 7 / 13;
+/*first row*/
+.row-one{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 13;
+    width: 100%;
+    
+}
+
+.row-one-part-2{
+    display: flex;
+    flex-direction: column;
 }
