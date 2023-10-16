@@ -376,6 +376,7 @@ img {
 
 .site_sort_list {
     display: flex;
+	flex-wrap: wrap;
     flex-direction: row;
     gap: 16px;
 	padding-top: 0.3%;
