@@ -5,7 +5,7 @@
 	--offset: 15px;
 	--gutter: 30px;
 	--columns: 12;
-    --grid-color: hsla(125, 67%, 51%, 0.25);
+    --grid-color: hsla(246, 72%, 47%, 0.25);
     --grid-repeating-width: calc(100% / var(--columns));
     --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
     --grid-background-width: calc(100% + var(--gutter));
@@ -65,16 +65,50 @@ img{
     width: 100%;
 }
 
+/*mobile*/
+@media only screen and (max-width: 600px){
+    
 /*first row*/
 .row-one{
     display: flex;
     flex-direction: column;
     grid-column: 1 / 13;
-    width: 100%;
-    
+    width: 100%;    
 }
 
+/*second row*/
+.row-two{
+    grid-column-end: span 12;
+    display: flex;
+    flex-direction: column;
+}
+.tag-words{
+    display: flex;
+    flex-direction: row;
+    
+}
 .row-one-part-2{
     display: flex;
     flex-direction: column;
 }
+
+/*third row*/
+.row-three{
+    border: solid red;
+    grid-column: 1 /13;
+
+}
+
+}
+
+
+/*non mobile */
+
+/*first row*/
+.row-one{
+    display: inherit;
+    
+    
+}
+
+
