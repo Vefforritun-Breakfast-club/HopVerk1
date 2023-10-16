@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* 						font						 */
+
+/* logo font er Lora, 700 */
+@font-face {
+	font-family: "Lora";
+	font-style: normal;
+	font-display: swap;
+	src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+/* restin er Lato 400 */
+@font-face {
+	font-family: "Lato";
+	src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+
+
+/* 						settings 						*/
+:root {
+	/* sizes */
+	--offset: 15px;
+	--border_radius: 5px;
+	--border_size: 1px;
+	--gap_size: 30px;
+	--font_size: 16px;
+	--spacing: 1rem;
+	--logo_gap: 10px;
+	--columns: 12;
+	--site_max_width: 1440px;
+	--grid-column-width: calc((100% / var(--columns)) - var(--gap_size));
+
+	/* colors */
+	--latte: #e1cec2;
+	--dark-brown: #3c2a1e;
+	--brown: #6f4e37;
+	--white: #ffffff;
+	--light: #FEFEFE;
+	--top-grey: #ecebec;
+	--top-grey2: #f2f1f3;
+
+	/* fonts */
+	--font-base-size: 1rem;
+	--font-family-base: 'Lato', sans-serif;
+	--font-family-logo: 'Lora', serif;
+}
+
+
+
+
+/* 						global						 */
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: var(--border_size);
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: var(--border_size);
+}
+
+html,
+input,
+select,
+button {
+	font-family: var(--font-family-base);
+}
+
+li {
+	font-size: var(--font_size);
+	list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+	margin: 0 0 1rem 0;
+}
+
+
+a {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.fontweight_normal {
+	font-weight: normal;
+}
+
+.grid_span2 {
+	grid-column-end: span 2;
+}
+
+/* 						box 					*/
+
+.box_container {
+	margin: 0 auto;
+	max-width: var(--site_max_width);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap_size);
+	padding: var(--offset);
+	grid-column-end: span 3;
+}
+
+
+.box {
+	grid-column-end: span 3;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+	flex-direction: column;
+	background-color: var(--white);
+	border-radius: var(--border_radius);
+	overflow-wrap: anywhere;
+	gap: 1rem;
+}
+
+.box button {
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: var(--border_radius);
+	border: var(--brown) var(--border_size) solid;
+	color: var(--dark-brown);
+	font-weight: 700;
+}
+
+.box figure figcaption h3 {
+	margin: 1rem 0 0 0;
+	font-size: 22px;
+}
+
+.product_tags {
+	display: flex;
+	flex-direction: row;
+	gap: calc(2*var(--border_radius));
+}
+
+.product_tags li {
+	background-color: var(--latte);
+	border-radius: var(--border_radius);
+	padding: var(--border_radius);
+	font-size: 14px;
+}
+
+.box_transparent {
+	background-color: transparent;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	color: inherit;
+	flex-wrap: wrap;
+	grid-column-end: span 4;
+
+}
+
+.box_transparent p {
+	font-size: 20px;
+	margin: 0 0 1rem 0;
+}
+
+.box_transparent h2 {
+	font-size: 36px;
+}
+
+.box_transparent .skoda {
+	font-size: 14px;
+	background-color: #6f4e37;
+	padding: 1rem;
+	border: var(--border_size) var(--dark-brown) solid;
+	border-radius: var(--border_radius);
+	color: var(--white);
+	width: fit-content;
+	margin: 1rem 0 0 0;
+}
+
+/* 				grid containter 				*/
+
+.top2bottom {
+	display: grid;
+	grid-template-areas:
+		"top"
+		"middle"
+		"bottom";
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto minmax(0, 270px);
+	align-items: center; 
+	padding: 0 0;
+	/* justify-items: center; */
+	align-items: flex-end;
+	justify-content: center;
+} 
+
+.grid_container {
+	opacity: 1;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	grid-gap: 30px;
+	align-items: center;
+	max-width: 1410px;
+	grid-column-end: span 1;
+	isolation: isolate;
+	width: calc(100% - (2 * var(--offset)));
+	margin: 0 auto;
+	text-overflow: ellipsis;
+}
+
+/* 						top 					*/
+.top_frontpage {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	grid-area: top;
+	position: relative;
+	grid-column-end: span 1;
+}
+
+.top_frontpage::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 0.5;
+	background-image: url("./images/Cable_Background.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+}
+
+.top {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	grid-area: top;
+	position: relative;
+	grid-column-end: span 1;
+}
+
+.head {
+	grid-column-end: span 12;
+	text-align: center;
+	text-align: center;
+	margin: 5.5em 0 9.5em 0;
+}
+
+.head h1 {
+	font-size: 10em;
+	letter-spacing: -3px;
+}
+
+.head h2 {
+	font-size: 2.25em;
+}
+
+/* 	Navigation bar	*/
+.logo {
+	grid-column-end: span 4;
+}
+
+.logo a {
+	display: flex;
+	align-items: center;
+	gap: var(--logo_gap);
+	width: fit-content;
+}
+
+.logo a svg {
+	display: flex;
+
+}
+
+.logo a h1 {
+	margin: 0;
+	font-family: var(--font-family-logo);
+	font-size: 2.5em;
+}
+
+.searchbar {
+	grid-column-end: span 4;
+	display: flex;
+	align-items: center;
+}
+
+.searchbar input {
+	flex: 1;
+	height: 2.5em;
+	padding: 0.3em;
+	background-image: url(./images/Magnifying_glass.svg);
+	background-repeat: no-repeat;
+	background-position: right 1em center;
+	border: black var(--border_size) solid;
+	border-radius: var(--border_radius);
+}
+
+.navigation {
+	grid-column-end: span 3;
+}
+
+.navigation menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shopping_cart_grid {
+	display: flex;
+	grid-template-columns: repeat(18, minmax(0, 1fr));
+	grid-template-rows: repeat(18, minmax(0, 4px));
+	width: 100%;
+	align-items: center;
+	justify-content: end;
+}
+
+.shopping_cart {
+	width: 50px;
+	height: 50px;
+}
+
+.link_menu_button {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* Sigurður byrjar Hér */
+
+
+.middle {
+    min-height: 100vh;
+	padding: 0 0;
+	max-width: 1410px;
+    isolation: isolate;
+    text-overflow: ellipsis;
+	grid-area: middle;
+	grid-column-end: span 1;
+	display: grid;
+}
+
+.title_products {
+    width: calc(100% - (2 * var(--offset)));
+	margin: 0 auto;
+	padding: 2% 0% 2% 0%;
+}
+
+.site_name {
+	font-size: 60px;
+
+}
+
+.site_sort {
+	width: calc(100% - (2 * var(--offset)));
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.site_sort_list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+	padding-top: 0.3%;
+
+}
+
+.site_sort_name h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.site_sort_list p {
+    background-color: var(--latte);
+    border-radius: 0.2rem;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.frontpage_grid_layout {
+	display: grid;
+	overflow: visible;
+
+}
+
+
+.latte_slice {
+	background-color: var(--latte);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.column3to11 {
+	grid-column-start: 3;
+	grid-column-end: 11;
+}
+
+.column3to11 h2 {
+	font-size: 36px;
+}
+
+
+
+/* Og endar hér */
+
+.bottom {
+	grid-area: bottom;
+	background-color: var(--dark-brown);
+	color: var(--light);
+	line-height: 1.5em;
+	width: 100%;
+	position: relative;
+	grid-template-columns: 100%;
+}
+
+.bottom .grid_container {
+	align-items: start;
+	padding: 2.25rem 0 0 0;
+}
+
+.footer_heading {
+	padding: 2rem 0 0 0;
+	margin: 0 0 -0.5rem 0;
+	border-bottom: 2px var(--latte) solid;
+	line-height: 1em;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.postscript {
+	font-size: 14px;
+	text-align: center;
+	line-height: 2em;
+	border-top: var(--border_size) var(--brown) solid;
+	width: 100%;
+}
+
+/* 						scaling 				*/
