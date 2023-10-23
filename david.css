@@ -1,50 +1,3 @@
-
-
-
-:root {
-	--offset: 15px;
-	--gutter: 30px;
-	--columns: 12;
-    --grid-color: hsla(246, 72%, 47%, 0.25);
-    --grid-repeating-width: calc(100% / var(--columns));
-    --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
-    --grid-background-width: calc(100% + var(--gutter));
-    --grid-background-columns: repeating-linear-gradient(
-      to right,
-      var(--grid-color),
-      var(--grid-color) var(--grid-column-width),
-      transparent var(--grid-column-width),
-      transparent var(--grid-repeating-width)
-    );
-}
-
-html {
-    position: relative;
-}
-  
-html::before {
-    content: '';
-  
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    
-    margin-right: auto;
-    margin-left: auto;
-    
-    width: calc(100% - (2 * var(--offset)));
-    max-width: calc(var(--site_max_width) - (2 * var(--offset)));
-    min-height: 100vh;
-    background-image: var(--grid-background-columns);
-    background-size: var(--grid-background-width) 100%;
-    z-index: 1000;
-    pointer-events: none;
-}
-
-
-
 /* Reset og border-box á allt */
 * {
 	margin: 0;
@@ -61,48 +14,142 @@ html {
 	box-sizing: inherit;
 }
 
-img{
-    width: 100%;
+/* 						font						 */
+
+/* logo font er Lora, 700 */
+@font-face {
+	font-family: "Lora";
+	font-style: normal;
+	font-display: swap;
+	src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
 }
 
-/*mobile*/
-@media only screen and (max-width: 600px){
-    .row_1{
-        grid-column: 1 / 13;
-        
-    }
+/* restin er Lato 400 */
+@font-face {
+	font-family: "Lato";
+	src: url(./fonts/Lato/Lato-Regular.ttf);
+}
 
-    .row-one-part-2{
-        grid-column: 1 / 13;
-    }
 
-    .second_row{
-        grid-column: 1 / 13;
-    }
-    .third_row{
-        display: flex;
-        flex-direction: column;
-        grid-column: 1 / 13;
-    }
+/* 						settings 						*/
+:root {
+	/* sizes */
+	--offset: 15px;
+	--border_radius: 5px;
+	--border_size: 1px;
+	--gap_size: 30px;
+	--font_size: 16px;
+	--spacing: 1rem;
+	--logo_gap: 10px;
+	--columns: 12;
+	--site_max_width: 1440px;
+	--grid-column-width: calc((100% / var(--columns)) - var(--gap_size));
+
+	/* colors */
+	--latte: #e1cec2;
+	--dark-brown: #3c2a1e;
+	--brown: #6f4e37;
+	--white: #ffffff;
+	--light: #FEFEFE;
+	--top-grey: #ecebec;
+	--top-grey2: #f2f1f3;
+
+	/* fonts */
+	--font-base-size: 1rem;
+	--font-family-base: 'Lato', sans-serif;
+	--font-family-logo: 'Lora', serif;
+}
+
+
+
+
+/* 						global						 */
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: var(--border_size);
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: var(--border_size);
+}
+
+html,
+input,
+select,
+button {
+	font-family: var(--font-family-base);
+}
+
+li {
+	font-size: var(--font_size);
+	list-style: none;
+}
+
+
+
+
+
+img {
+	width: 100%;
+}
+
+
+
+
+
+/* 				grid containter 				*/
+
+.top2bottom {
+	display: grid;
+	grid-template-areas:
+		"top"
+		"middle"
+		"bottom";
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto minmax(0, 270px);
+	align-items: center;
+	padding: 0 0;
+	justify-items: center;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.grid_container {
+	opacity: 1;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+    
+	gap: 30px;
+	align-items: center;
+	max-width: 1410px;
+	grid-column-end: span 1;
+	isolation: isolate;
+	width: calc(100% - (2 * var(--offset)));
+	margin: 0 auto;
+	text-overflow: ellipsis;
 
 }
 
-.tag-words{
-    display: flex;
-    border: solid red;
-}
 
-/*non mobile */
+/*First Row*/
 
-/*first row*/
-.row_1{
-    grid-column-end: span 13;
-}
-
-.motherboard_img{
+.section-one div:nth-child(1){
     grid-column: span 6;
+    height: 486px; 
+    border: solid;
+}
+.section-one div:nth-child(1) > img{
+    height: auto;
+}
+.row-one-part-2{
+    grid-column: span 6;
+
+    border: solid;
+       
+ 
+    
 }
 
-.row-one-part-2{
-    grid-column: 7 /span 6;
-}
