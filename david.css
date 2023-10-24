@@ -228,3 +228,121 @@ img {
 	justify-content: space-between;
 }
 
+/**Matrix stuff**/
+.product_page_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto,30.375em) auto minmax(auto, 30.9375em) auto;
+    /* width: 100%; */
+}
+.span_sex_columns{
+    grid-column-end: span 6;
+    width: 100%;
+    height: 100%;
+    overflow-wrap: anywhere;
+	object-fit: contain;
+}
+
+.vorutexti{
+    /* font-weight: 400; */
+    font-size: 2em;
+    /* line-height: 2em; */
+}
+
+
+.vorumynd_box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: var(--white);
+	border-radius: var(--border_radius);
+	overflow-wrap: anywhere;
+	gap: 1rem;
+    height: 100%;
+    flex:1;
+}
+
+
+.vorumynd_box .grid_container {
+    margin: auto 0 0 0;
+    width: 100%;
+    align-items: center;
+}
+
+.vorumynd_box button {
+	background-color: white;
+	padding: 0.75rem;
+	border-radius: var(--border_radius);
+	border: var(--brown) var(--border_size) solid;
+	color: var(--dark-brown);
+	font-weight: 700;
+    flex-basis: 50%;
+    grid-column-end: span 6;
+}
+
+.vorumynd_box figure figcaption h3 {
+	margin: 1rem 0 0 0;
+	font-size: 22px;
+}
+
+.product_tags {
+	display: flex;
+	flex-direction: row;
+	gap: calc(2*var(--border_radius));
+}
+
+.product_tags li {
+	background-color: var(--latte);
+	border-radius: var(--border_radius);
+	padding: var(--border_radius);
+	font-size: 14px;
+}
+.heading_nyr_class {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+.paragraph{
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.column3to11 .heading_nyr_class {
+    font-size: 2em;
+    padding: 0.5em 0 0 0;
+}
+.grid_span2 .heading_nyr_class {
+    font-size: 2em;
+    margin: 25px 0 0 0;
+}
+
+.white_middle_fill {
+    grid-column-end: span 1;
+	grid-row: span 1;
+    padding: 0 0 60px 0;
+}
+
+
+
+@media (max-width:1120px) {
+	.span_sex_columns {
+		margin: 1em 0;
+		grid-column-end: span 12;
+	}
+	.middle {
+		contain: object-fit;
+	}
+	.product_page_grid {
+		grid-template-rows: auto auto auto auto;
+	}
+	.vorumynd_box .grid_container .span_sex_columns {
+		text-align: center;
+		height: fit-content;
+	}
+	.vorumynd_box .grid_container .buy_matrix{
+		grid-column-end: span 12;
+		justify-items: center;
+	}
+
+
+}
