@@ -7,10 +7,6 @@
 	font-size: 60px;
 }
 
-.site_name {
-	font-size: 60px;
-
-}
 
 .site_sort {
 	width: calc(100% - (2 * var(--offset)));
@@ -49,7 +45,6 @@
 .product_site {
 	padding-top: 30px;
 	padding-bottom: 30px;
-
 }
 
 .latte_fill {
