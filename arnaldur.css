@@ -9,6 +9,7 @@
     width: 100%;
     height: fit-content;
     overflow-wrap: anywhere;
+	height: 100%;
 }
 
 .vorutexti{
@@ -78,10 +79,12 @@
 .column3to11 .heading_nyr_class {
     font-size: 2em;
     padding: 0.5em 0 0 0;
+	font-weight: 400;
 }
 .grid_span2 .heading_nyr_class {
     font-size: 2em;
-    margin: 25px 0 0 0;
+    /* margin: -0.5em 0 0 0; */
+	/* line-height: 3em 0 0 0; */
 }
 
 .white_middle_fill {
