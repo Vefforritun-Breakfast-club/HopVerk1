@@ -7,8 +7,6 @@
 	grid-column-end: span 5;
 }
 
-
-
 .link_menu .bottom {
 	background-color: white;
 }
@@ -33,17 +31,12 @@
 }
 
 .link_menu .bottom .grid_container {
-	/* justify-items: start; */
 	padding: 0;
-
 }
 
 .menu_box {
 	display: flex;
 	flex-direction: column;
-	/* grid-template-columns: 1fr; */
-	/* grid-template-rows: auto auto auto; */
-	/* height: 100%; */
 	align-self: center;
 	gap: 0.5em;
 }
@@ -54,10 +47,7 @@
 	line-height: 110px;
 	letter-spacing: 0em;
 	text-align: center;
-
 }
-
-
 
 .link_menu nav {
 	margin: 0.5em 0 0 0;
@@ -80,7 +70,6 @@
 	margin: 0 auto;
 	padding: 2% 0% 2% 0%;
 	height: fit-content;
-
 }
 
 .cart_items {
@@ -94,7 +83,6 @@
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(3, auto);
 	gap: var(--gap_size);
-
 }
 
 .line_between {
@@ -117,14 +105,10 @@
 	gap: 0 var(--gap_size);
 }
 
-
-
 .order_box img {
 	height: 84px;
 	width: 90px;
 	grid-column-start: 1;
-	/* object-fit: contain; */
-	/* object-fit: cover; */
 	object-position: top;
 	max-height: 400px;
 }
@@ -133,17 +117,13 @@
 	grid-column-end: span 3;
 	align-self: center;
 	font-size: 1.375em;
-
 }
 
 .span4 {
 	grid-column-end: span 4;
-
 	font-size: 22px;
-
 	line-height: 32px;
 	letter-spacing: 0em;
-
 }
 
 .verd_column_12 {
@@ -153,12 +133,6 @@
 	align-self: center;
 	font-size: 1.375em;
 }
-
-/* .order_site_grid {
-	display: grid;
-	grid-template-columns: repeat(6,1fr);
-	grid-template-rows: fit-content auto auto;
-} */
 
 .fieldset_heading {
 	font-size: 2em;
@@ -183,27 +157,18 @@
 }
 
 .label_input_order label {
-
-
 	font-size: 20px;
-
 	line-height: 32px;
 	letter-spacing: 0em;
-
-
 }
-
 
 .order_name {
 	font-size: 60px;
-
 	line-height: 80px;
 	letter-spacing: 0em;
 	grid-column-end: span 12;
 	padding: 0.25em 0;
 	margin: 0 0 -0.5em 0;
-
-
 }
 
 .span6 {
@@ -211,14 +176,9 @@
 	position: relative;
 }
 
-
-
 .order_site .grid_container {
 	align-items: start;
 }
-
-
-
 
 .senda_pontun {
 	background-color: #6f4e37;
@@ -231,11 +191,7 @@
 	font-size: 20px;
 	line-height: 32px;
 	letter-spacing: 0em;
-
 }
-
-
-
 
 @media (max-width: 1120px) {
 	.order_box img {
@@ -245,7 +201,6 @@
 		grid-column-end: span 2;
 	}
 }
-
 
 @media (max-width: 820px) {
 	.span6 {
@@ -265,8 +220,6 @@
 		grid-column-end: span 1;
 	}
 }
-
-
 
 @media (max-width: 650px) {
 	.span6 {
