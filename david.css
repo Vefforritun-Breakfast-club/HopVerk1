@@ -232,7 +232,7 @@ img {
 .product_page_grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto,30.375em) auto minmax(auto, 30.9375em) auto;
+    grid-template-rows: minmax(30.375em,auto) auto minmax(30.9375em,auto) auto;
     /* width: 100%; */
 }
 .span_sex_columns{
@@ -309,8 +309,13 @@ img {
 
 .column3to11 .heading_nyr_class {
     font-size: 2em;
-    padding: 0.5em 0 0 0;
+    font-weight: 400;
 }
+
+.grid_span2 {
+	grid-column-end: span 12;
+}
+
 .grid_span2 .heading_nyr_class {
     font-size: 2em;
     margin: 25px 0 0 0;
@@ -345,4 +350,37 @@ img {
 	}
 
 
+}
+
+
+/* skalanleiki */
+
+@media (max-width: 1120px) {
+	.product_page_grid .white {
+		padding: var(--gap_size) 0;
+	}
+	.span_sex_columns {
+		grid-column-start: 2;
+		grid-column-end: span 10;
+	}
+
+}
+
+@media (max-width: 820px) {
+	.span_sex_columns {
+		grid-column-start: 1;
+		grid-column-end: span 12;
+	}
+	.column3to11 {
+		grid-column-start: 2;
+		grid-column-end: span 10;
+	}
+
+}
+
+@media (max-width: 650px) {
+	.column3to11 {
+		grid-column-start: 1;
+		grid-column-end: span 12;
+	}
 }
