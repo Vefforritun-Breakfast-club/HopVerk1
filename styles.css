@@ -255,9 +255,7 @@ img {
 	opacity: 0.5;
 	background-image: url("./images/Cable_Background.png");
 	background-repeat: no-repeat;
-	/* background-size: cover; */
-	background-position: center;
-	/* background-position: top center; */
+	background-position: top;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
 }
 
@@ -383,9 +381,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, minmax(32.5em, auto) minmax(42.125em, auto)) 1fr;
-	/* overflow: visible; */
 	object-fit: contain;
-
 }
 
 .white {
