@@ -4,6 +4,7 @@
     width: calc(100% - (2 * var(--offset)));
 	margin: 0 auto;
 	padding: 2% 0% 2% 0%;
+	font-size: 60px;
 }
 
 .site_name {
@@ -45,7 +46,16 @@
 	border: 0;
 }
 
-.latte_slice {
+.product_site {
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+}
+
+.latte_fill {
+	grid-column-end: span 1;
+	grid-row: span 1;
+	height: 100%;
+	width: 100%;
+	background-color: var(--latte);
 }
