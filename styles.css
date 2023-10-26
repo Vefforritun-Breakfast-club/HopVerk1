@@ -45,7 +45,11 @@ html {
   --latte: #e1cec2;
   --dark-brown: #3c2a1e;
   --brown: #6f4e37;
+<<<<<<< HEAD
   --white: #fff;
+=======
+  --white: #ffffff;
+>>>>>>> 4775df34b83305824fe55e01f31f1bbda39b6eca
   --light: #FEFEFE;
   --top-grey: #ecebec;
   --top-grey2: #f2f1f3;
@@ -83,7 +87,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  margin: 0 0 1rem;
+  margin: 0 0 1rem 0;
 }
 
 a {
@@ -875,7 +879,11 @@ img {
   gap: 0;
 }
 
+<<<<<<< HEAD
 .line-between li:nth-last-child(-n+1) {
+=======
+.line_between li:nth-last-child(-n+1) {
+>>>>>>> 4775df34b83305824fe55e01f31f1bbda39b6eca
   border: none;
 }
 
