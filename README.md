@@ -3,15 +3,15 @@
 Nota npm run dev til að keyra verkefnið.
 npm lint er núna til staðar 
 
-þeir sem unnu þetta verkefni eru:
-Elías Lúðvíksson: ell9@hi.is. 
-Github: @Skatturinn
-David Abew-Baidoo: daa32@hi.is. 
-Github: kwamenaabew
-Arnaldur Ólafsson: aro42@hi.is.
-Github: Add1Padd1
-Sigurður Þór Jósefsson: stj46@hi.is.
-Github: SigurdurThorJ
+þeir sem unnu þetta verkefni eru: <br>
+Elías Lúðvíksson: ell9@hi.is.  <br>
+Github: @Skatturinn <br> 
+David Abew-Baidoo: daa32@hi.is. <br>
+Github: @kwamenaabew <br>
+Arnaldur Ólafsson: aro42@hi.is. <br>
+Github: @Add1Padd1 <br>
+Sigurður Þór Jósefsson: stj46@hi.is. <br>
+Github: @SigurdurThorJ <br>
 
 * Everyone has a .css file.
 	* Uncomment the style link sheet comment and put your name in the .css name
