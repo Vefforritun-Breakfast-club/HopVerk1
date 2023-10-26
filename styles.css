@@ -632,4 +632,7 @@ img {
 		grid-column-end: span 12;
 		grid-column-start: 1;
 	}
+	.product_page_grid .latte_slice .grid_container .box:nth-child(even) {
+		grid-column-start: auto;
+	}
 }
