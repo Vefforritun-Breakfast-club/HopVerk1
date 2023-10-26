@@ -1,5 +1,4 @@
 {
-    "extends": ["stylelint-config-sass-guidelines"],
-    "rules": { 
-    }
+  "extends": ["stylelint-config-sass-guidelines"],
+  "rules": { "selector-pseudo-element-colon-notation": null }
 }

@@ -1,0 +1,134 @@
+.title_products {
+    grid-column-end: span 12;
+    font-size: 60px;
+    padding: 1% 0% 0% 0%;
+}
+
+// .site_name {
+//     font-size: 60px;
+//     width: calc(100% - (2 * var(--offset)));
+//     margin: 0 auto;
+//     padding: 2% 0% 2% 0%;
+//     height: fit-content;
+// }
+
+.cart_items {
+    grid-column-end: span 6;
+}
+
+.order_box {
+    grid-column-end: span 6;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: var(--gap_size);
+}
+
+.line_between {
+    grid-column-end: span 6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 0;
+}
+
+.line_between li:nth-last-child(-n + 1) {
+    border: none;
+}
+
+.line_between .order_box {
+    grid-column-end: span 1;
+    padding: 1em 0;
+    border-bottom: var(--latte) 1px solid;
+    margin: 0;
+    gap: 0 var(--gap_size);
+}
+
+.order_box img {
+    height: 84px;
+    width: 90px;
+    grid-column-start: 1;
+    object-position: top;
+    max-height: 400px;
+}
+
+.order_box a {
+    grid-column-end: span 3;
+    align-self: center;
+    font-size: 1.375em;
+}
+
+.span4 {
+    grid-column-end: span 4;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+.verd_column_12 {
+    grid-column-end: span 2;
+    justify-self: end;
+    overflow: hidden;
+    align-self: center;
+    font-size: 1.375em;
+}
+
+.fieldset_heading {
+    font-size: 2em;
+    line-height: 3em;
+    letter-spacing: 0em;
+    margin: -0.5em 0 0 0;
+}
+
+.label_input_order {
+    grid-column-end: span 3;
+    margin: -0.5em 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_input_order input {
+    flex: 1;
+    height: 2.5em;
+    padding: 0.75em;
+    border: black var(--border_size) solid;
+    border-radius: var(--border_radius);
+}
+
+.label_input_order label {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+.order_name {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0em;
+    grid-column-end: span 12;
+    padding: 0.25em 0;
+    margin: 0 0 -0.5em 0;
+}
+
+.span6 {
+    grid-column-end: span 6;
+    position: relative;
+}
+
+.order_site .grid_container {
+    align-items: start;
+}
+
+.senda_pontun {
+    background-color: #6f4e37;
+    padding: 0.5em;
+    border: var(--border_size) var(--dark-brown) solid;
+    border-radius: var(--border_radius);
+    color: var(--white);
+    width: fit-content;
+    margin: 1em 0 2.5em 0;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0em;
+}

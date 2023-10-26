@@ -1,0 +1,30 @@
+/* 				grid containter 				*/
+
+.top2bottom {
+    display: grid;
+    grid-template-areas:
+        "top"
+        "middle"
+        "bottom";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto minmax(270px, auto);
+    align-items: center;
+    padding: 0 0;
+    justify-items: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.grid_container {
+    opacity: 1;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 30px;
+    align-items: center;
+    max-width: 1410px;
+    grid-column-end: span 1;
+    isolation: isolate;
+    width: calc(100% - (2 * var(--offset)));
+    margin: 0 auto;
+    text-overflow: ellipsis;
+}

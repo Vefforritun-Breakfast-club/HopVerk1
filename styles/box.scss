@@ -1,0 +1,92 @@
+/* 						box 					*/
+
+.box_container {
+    margin: 0 auto;
+    max-width: var(--site_max_width);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap_size);
+    padding: var(--offset);
+    grid-column-end: span 3;
+}
+
+
+.box {
+    grid-column-end: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: var(--border_radius);
+    overflow-wrap: anywhere;
+    gap: 1rem;
+}
+
+.box button {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: var(--border_radius);
+    border: var(--brown) var(--border_size) solid;
+    color: var(--dark-brown);
+    font-weight: 700;
+}
+
+.box figure {
+    display: inline-block;
+    text-align: left;
+}
+
+.box figure figcaption h3 {
+    margin: 1rem 0 0 0;
+    font-size: 22px;
+}
+
+.product_tags {
+    display: flex;
+    flex-direction: row;
+    gap: calc(2*var(--border_radius));
+}
+
+.product_tags li {
+    background-color: var(--latte);
+    border-radius: var(--border_radius);
+    padding: var(--border_radius);
+    font-size: 14px;
+}
+
+.box_transparent {
+    background-color: transparent;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    color: inherit;
+    flex-wrap: wrap;
+    grid-column-end: span 4;
+    object-fit: contain;
+}
+
+.box_transparent img {
+    object-position: center;
+}
+
+.box_transparent p {
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+}
+
+.box_transparent h2 {
+    font-size: 36px;
+}
+
+
+.box_transparent .skoda {
+    font-size: 14px;
+    background-color: #6f4e37;
+    padding: 1rem;
+    border: var(--border_size) var(--dark-brown) solid;
+    border-radius: var(--border_radius);
+    color: var(--white);
+    width: fit-content;
+    margin: 1rem 0 0 0;
+}
