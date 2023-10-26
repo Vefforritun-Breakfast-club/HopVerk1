@@ -4,19 +4,12 @@
 	grid-column-end: span 12;
 }
 
-
-.site_sort {
-	width: calc(100% - (2 * var(--offset)));
-	margin: 0 auto;
-	padding-bottom: 30px;
-}
 .span12 {
 	grid-column-end: span 12;
 	padding: 0 0 2% 0;
 }
 
 .site_sort_list {
-	grid-column-end: span 12;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -25,7 +18,6 @@
 }
 
 .site_sort_name {
-	grid-column-end: span 12;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
@@ -53,8 +45,4 @@
 	padding: var(--gap_size) 0 0 0;
 }
 
-/* .product_site {
-	grid-template-columns: 1fr;
-	grid-template-rows: minmax();
-} */
 
