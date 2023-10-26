@@ -540,7 +540,7 @@ img {
 		grid-column-start: 2;
 	}
 	.product_page_grid .latte_slice .grid_container .box:nth-child(odd) {
-		grid-column-start: 7;
+		grid-column-start: auto;
 	}
 }
 
