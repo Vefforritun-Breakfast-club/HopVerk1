@@ -1,6 +1,6 @@
 /* 						top 					*/
 
-.top_frontpage {
+.top-frontpage {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -9,12 +9,12 @@
     grid-column-end: span 1;
 }
 
-.top_frontpage::before {
+.top-frontpage::before {
     content: "";
     position: absolute;
     inset: 0;
     opacity: 0.5;
-    background-image: url("./images/Cable_Background.png");
+    background-image: url("./images/Cable-Background.png");
     background-repeat: no-repeat;
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
@@ -33,7 +33,7 @@
     grid-column-end: span 12;
     text-align: center;
     text-align: center;
-    margin: 5.5em 0 9.5em 0;
+    margin: 5.5em 0 9.5em;
     word-break: break-word;
 }
 

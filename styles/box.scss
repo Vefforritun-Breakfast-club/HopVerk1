@@ -1,11 +1,11 @@
 /* 						box 					*/
 
-.box_container {
+.box-container {
     margin: 0 auto;
-    max-width: var(--site_max_width);
+    max-width: var(--site-max-width);
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gap_size);
+    gap: var(--gap-size);
     padding: var(--offset);
     grid-column-end: span 3;
 }
@@ -18,16 +18,16 @@
     padding: 1rem;
     flex-direction: column;
     background-color: var(--white);
-    border-radius: var(--border_radius);
+    border-radius: var(--border-radius);
     overflow-wrap: anywhere;
     gap: 1rem;
 }
 
 .box button {
-    background-color: white;
+    background-color: #fff;
     padding: 0.5rem;
-    border-radius: var(--border_radius);
-    border: var(--brown) var(--border_size) solid;
+    border-radius: var(--border-radius);
+    border: var(--brown) var(--border-size) solid;
     color: var(--dark-brown);
     font-weight: 700;
 }
@@ -35,27 +35,29 @@
 .box figure {
     display: inline-block;
     text-align: left;
+
+    figcaption h3 {
+        margin: 1rem 0 0;
+        font-size: 22px;
+    }
 }
 
-.box figure figcaption h3 {
-    margin: 1rem 0 0 0;
-    font-size: 22px;
-}
 
-.product_tags {
+
+.product-tags {
     display: flex;
     flex-direction: row;
-    gap: calc(2*var(--border_radius));
+    gap: calc(2*var(--border-radius));
 }
 
-.product_tags li {
+.product-tags li {
     background-color: var(--latte);
-    border-radius: var(--border_radius);
-    padding: var(--border_radius);
+    border-radius: var(--border-radius);
+    padding: var(--border-radius);
     font-size: 14px;
 }
 
-.box_transparent {
+.box-transparent {
     background-color: transparent;
     display: flex;
     gap: 1rem;
@@ -66,27 +68,27 @@
     object-fit: contain;
 }
 
-.box_transparent img {
+.box-transparent img {
     object-position: center;
 }
 
-.box_transparent p {
+.box-transparent p {
     font-size: 20px;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
-.box_transparent h2 {
+.box-transparent h2 {
     font-size: 36px;
 }
 
 
-.box_transparent .skoda {
+.box-transparent .skoda {
     font-size: 14px;
     background-color: #6f4e37;
     padding: 1rem;
-    border: var(--border_size) var(--dark-brown) solid;
-    border-radius: var(--border_radius);
+    border: var(--border-size) var(--dark-brown) solid;
+    border-radius: var(--border-radius);
     color: var(--white);
     width: fit-content;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0;
 }

@@ -1,15 +1,15 @@
-.title_products {
-    padding: 1% 0% 0% 0%;
+.title-products {
+    padding: 1% 0% 0%;
     font-size: 60px;
     grid-column-end: span 12;
 }
 
 .span12 {
     grid-column-end: span 12;
-    padding: 0 0 2% 0;
+    padding: 0 0 2%;
 }
 
-.site_sort_list {
+.site-sort-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -17,16 +17,16 @@
     padding-top: 0.3%;
 }
 
-.site_sort_name {
+.site-sort-name {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
 }
 
-.site_sort_list li button {
+.site-sort-list li button {
     background-color: var(--latte);
-    border-radius: var(--border_radius);
+    border-radius: var(--border-radius);
     padding-left: 0.5%;
     padding-right: 0.5%;
     font-style: normal;
@@ -38,10 +38,10 @@
     padding: 0.25em;
 }
 
-.product_site .latte_slice {
+.product-site .latte-slice {
     padding: 2% 0;
 }
 
-.product_site {
-    padding: var(--gap_size) 0 0 0;
+.product-site {
+    padding: var(--gap-size) 0 0 0;
 }
