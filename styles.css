@@ -239,8 +239,6 @@ img {
 	width: calc(100% - (2 * var(--offset)));
 	margin: 0 auto;
 	text-overflow: ellipsis;
-	list-style: none;
-
 }
 
 /* 						top 					*/
