@@ -46,7 +46,7 @@ html {
   --dark-brown: #3c2a1e;
   --brown: #6f4e37;
   --white: #ffffff;
-  --light: #fefefe;
+  --light: #FEFEFE;
   --top-grey: #ecebec;
   --top-grey2: #f2f1f3;
   /* fonts */
@@ -83,7 +83,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  margin: 0 0 1rem;
+  margin: 0 0 1rem 0;
 }
 
 a {
@@ -876,7 +876,7 @@ img {
   gap: 0;
 }
 
-.line_between li:nth-last-child(-n + 1) {
+.line_between li:nth-last-child(-n+1) {
   border: none;
 }
 
