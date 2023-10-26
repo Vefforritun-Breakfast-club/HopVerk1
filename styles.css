@@ -99,11 +99,6 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-	object-fit: cover;
-}
-
 .fontweight_normal {
 	font-weight: normal;
 }
