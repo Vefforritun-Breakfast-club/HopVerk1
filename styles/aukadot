@@ -1,0 +1,19 @@
+/* matrix of þær síður */
+.span_sex_columns{
+    grid-column-end: span 6;
+    width: 100%;
+    height: fit-content;
+    overflow-wrap: anywhere;
+	height: 100%;
+	object-fit: contain;
+}
+
+.vorutexti{
+    font-size: 2em;
+}
+
+
+.vorumynd_box figure figcaption h3 {
+	margin: 1rem 0 0 0;
+	font-size: 22px;
+}

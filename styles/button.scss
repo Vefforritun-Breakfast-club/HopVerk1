@@ -1,0 +1,10 @@
+.vorumynd_box button {
+	background-color: white;
+	padding: 0.75rem;
+	border-radius: var(--border_radius);
+	border: var(--brown) var(--border_size) solid;
+	color: var(--dark-brown);
+	font-weight: 700;
+    flex-basis: 50%;
+    grid-column-end: span 6;
+}
