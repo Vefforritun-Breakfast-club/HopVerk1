@@ -101,12 +101,6 @@ a {
 	text-decoration: none;
 }
 
-img {
-	grid-column-end: span 1;
-	display: grid;
-	/* min-height: 100%; */
-	width: 100%;
-}
 
 .fontweight_normal {
 	font-weight: normal;

@@ -1,239 +1,8 @@
-/* Reset og border-box á allt */
-* {
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-/* 						font						 */
-
-/* logo font er Lora, 700 */
-@font-face {
-	font-family: "Lora";
-	font-style: normal;
-	font-display: swap;
-	src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
-}
-
-/* restin er Lato 400 */
-@font-face {
-	font-family: "Lato";
-	src: url(./fonts/Lato/Lato-Regular.ttf);
-}
-
-
-/* 						settings 						*/
-:root {
-	/* sizes */
-	--offset: 15px;
-	--border_radius: 5px;
-	--border_size: 1px;
-	--gap_size: 30px;
-	--font_size: 16px;
-	--spacing: 1rem;
-	--logo_gap: 10px;
-	--columns: 12;
-	--site_max_width: 1440px;
-	--grid-column-width: calc((100% / var(--columns)) - var(--gap_size));
-
-	/* colors */
-	--latte: #e1cec2;
-	--dark-brown: #3c2a1e;
-	--brown: #6f4e37;
-	--white: #ffffff;
-	--light: #FEFEFE;
-	--top-grey: #ecebec;
-	--top-grey2: #f2f1f3;
-
-	/* fonts */
-	--font-base-size: 1rem;
-	--font-family-base: 'Lato', sans-serif;
-	--font-family-logo: 'Lora', serif;
-}
-
-
-
-
-/* 						global						 */
-
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-.sr-only:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: var(--border_size);
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: var(--border_size);
-}
-
-html,
-input,
-select,
-button {
-	font-family: var(--font-family-base);
-}
-
-li {
-	font-size: var(--font_size);
-	list-style: none;
-}
-
-
-
-
-
-img {
-	width: 100%;
-}
-
-
-
-
-
-/* 				grid containter 				*/
-
-.top2bottom {
-	display: grid;
-	grid-template-areas:
-		"top"
-		"middle"
-		"bottom";
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto minmax(0, 270px);
-	align-items: center;
-	padding: 0 0;
-	justify-items: center;
-	align-items: flex-end;
-	justify-content: center;
-}
-
-.grid_container {
-	opacity: 1;
-	display: grid;
-	grid-template-columns: repeat(12, minmax(0, 1fr));
-    
-	gap: 30px;
-	align-items: center;
-	max-width: 1410px;
-	grid-column-end: span 1;
-	isolation: isolate;
-	width: calc(100% - (2 * var(--offset)));
-	margin: 0 auto;
-	text-overflow: ellipsis;
-
-}
-
-
-/*First Row*/
-
-.section-one div:nth-child(1){
-    grid-column: span 6;
-    height: 486px; 
-    border: solid;
-}
-.section-one div:nth-child(1) > img{
-    height: auto;
-}
-.row-one-part-2{
-    grid-column: span 6;
-
-    border: solid;
-       
- 
-    
-}
-
-.middle{
-    width: 100%;
-}
-
-.david_page_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto, 30.375em) auto minmax(auto, 30.9375em);
-    width: 100%;
-	
-}
-.david_page_grid_fill {
-    grid-column-end: span 1;
-    grid-row-end: span 1;
-}
-
-/* .david_grid_span_6 {
-    grid-column-end: span 6;
-} */
-
-
-/* box */
-.david_box {
-	grid-column-end: span 6;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	background-color: var(--white);
-	border-radius: var(--border_radius);
-	overflow-wrap: anywhere;
-	gap: 1rem;
-}
-
-.david_box button {
-	background-color: white;
-	padding: 0.5rem;
-	border-radius: var(--border_radius);
-	border: var(--brown) var(--border_size) solid;
-	color: var(--dark-brown);
-	font-weight: 700;
-}
-
-.david_box figure figcaption h3 {
-	margin: 1rem 0 0 0;
-	font-size: 22px;
-}
-
-.product_tags {
-	display: flex;
-	flex-direction: row;
-	gap: calc(2*var(--border_radius));
-}
-
-.product_tags li {
-	background-color: var(--latte);
-	border-radius: var(--border_radius);
-	padding: var(--border_radius);
-	font-size: 14px;
-}
-
-.bord{
-	
-	max-height: 486px;
-}
-
-.mid-section{
-
-	height: 591px;
-}
-
-.price-tag{
-	display: flex;
-	justify-content: space-between;
-}
-
 /**Matrix stuff**/
 .product_page_grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(30.375em,auto) auto minmax(30.9375em,auto) auto;
-    /* width: 100%; */
 }
 .span_sex_columns{
     grid-column-end: span 6;
@@ -244,9 +13,7 @@ img {
 }
 
 .vorutexti{
-    /* font-weight: 400; */
     font-size: 2em;
-    /* line-height: 2em; */
 }
 
 
@@ -285,18 +52,6 @@ img {
 	font-size: 22px;
 }
 
-.product_tags {
-	display: flex;
-	flex-direction: row;
-	gap: calc(2*var(--border_radius));
-}
-
-.product_tags li {
-	background-color: var(--latte);
-	border-radius: var(--border_radius);
-	padding: var(--border_radius);
-	font-size: 14px;
-}
 .heading_nyr_class {
     font-size: 60px;
     margin: 0;
@@ -334,12 +89,6 @@ img {
 		margin: 1em 0;
 		grid-column-end: span 12;
 	}
-	.middle {
-		contain: object-fit;
-	}
-	.product_page_grid {
-		grid-template-rows: auto auto auto auto;
-	}
 	.vorumynd_box .grid_container .span_sex_columns {
 		text-align: center;
 		height: fit-content;
@@ -351,7 +100,9 @@ img {
 
 
 }
-
+.middle {
+	width: 100%;
+}
 
 /* skalanleiki */
 
