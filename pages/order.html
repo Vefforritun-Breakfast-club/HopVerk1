@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../grid.css">
 	<link rel="stylesheet" href="../styles.css">
-	<!-- <link rel="stylesheet" href="../your_name_here.css"> -->
+	<link rel="stylesheet" href="../elias.css">
 	<meta name="description" content="Forsíða Tæknibúðarinar allt splunkunýtt og fullt af tilboðum.">
 	<meta property="og:title" content="Tæknibúðin">
 	<meta property="og:description" content="Tilboð hjá Tæknibúðinni">
@@ -31,7 +31,14 @@
 					</a>
 				</header>
 				<div class="searchbar"><input type="search" id="site-search" name="q" required
-						placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."></div>
+						placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+					<svg class="magnify_glass" width="20" height="20" viewBox="0 0 20 20" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M14.2857 12.5714H13.3714L13.0286 12.2286C14.1714 10.9714 14.8571 9.25714 14.8571 7.42857C14.8571 3.31429 11.5429 0 7.42857 0C3.31429 0 0 3.31429 0 7.42857C0 11.5429 3.31429 14.8571 7.42857 14.8571C9.25714 14.8571 10.9714 14.1714 12.2286 13.0286L12.5714 13.3714V14.2857L18.2857 20L20 18.2857L14.2857 12.5714ZM7.42857 12.5714C4.57143 12.5714 2.28571 10.2857 2.28571 7.42857C2.28571 4.57143 4.57143 2.28571 7.42857 2.28571C10.2857 2.28571 12.5714 4.57143 12.5714 7.42857C12.5714 10.2857 10.2857 12.5714 7.42857 12.5714Z"
+							fill="black" />
+					</svg>
+				</div>
 				<nav class="navigation">
 					<menu>
 						<li><a href="./new.html">Nýjar vörur</a></li>
@@ -39,7 +46,7 @@
 						<li><a href="./all.html">Allar vörur</a></li>
 					</menu>
 				</nav>
-				<a class="shopping_cart_grid" href="./order.html">
+				<a class="shopping_cart" href="./order.html">
 					<svg class="shopping_cart" width="30" height="30" viewBox="-10 -10 30 50" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd"
@@ -49,7 +56,7 @@
 						<text x="3" y="32" text-anchor="middle" fill="white">1</text>
 					</svg>
 				</a>
-				<a class="link_menu_button" href="./pages/link_menu.html">
+				<a class="link_menu_button" href="./link_menu.html">
 					<svg class="link_menu_button" width="28" height="20" viewBox="0 0 28 20" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -60,28 +67,76 @@
 			</div>
 		</div>
 		<main id="efni" class="middle">
+			<div class="order_site">
+				<div class="grid_container">
+					<h1 class="order_name">Pöntun</h1>
+					<form class="span6">
+						<fieldset class="order_box">
+							<legend class="fieldset_heading">Kaupandi</legend>
+							<div class="label_input_order">
+								<label for="Nafn">Nafn</label>
+								<input id="Nafn" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Kennitala">Kennitala</label>
+								<input id="Kennitala" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Netfang">Netfang</label>
+								<input id="Netfang" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Sími">Sími</label>
+								<input id="Sími" type="text" required>
+							</div>
+						</fieldset>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+						<fieldset class="order_box">
+							<legend class="fieldset_heading">Afhending</legend>
+							<div class="label_input_order">
+								<label for="Heimilisfang">Heimilisfang</label>
+								<input id="Heimilisfang" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Póstnúmer">Póstnúmer</label>
+								<input id="Póstnúmer" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Staður">Staður</label>
+								<input id="Staður" type="text" required>
+							</div>
+							<div class="label_input_order">
+								<label for="Athugasemd">Athugasemd</label>
+								<input id="Athugasemd" type="text" required>
+							</div>
+						</fieldset>
+						<button class="senda_pontun">SENDA PÖNTUN</button>
+					</form>
+					<ol class="line_between">
+						<li class="order_box">
+							<img src="../images/Cute_Robot.png" alt="">
+							<a href="./pages/robot.html">
+								Vinalegur vinnuróbot
+							</a>
+							<p class="verd_column_12">1.499.990 kr. </p>
+						</li>
+						<li class="order_box">
+							<img src="../images/Motherboard.png" alt="">
+							<a href="./pages/motherboard.html">
+								Tæknilegt móðurborð
+							</a>
+							<p class="verd_column_12">189.000 kr</p>
+						</li>
+						<li class="order_box">
+							<p class="span4"><strong>Samtals</strong></p>
+							<p class="verd_column_12"><strong>1.688.990 kr</strong>.</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="dark_brown_fill"> </div>
 		</main>
 		<footer class="bottom">
-			<!-- do not change -->
 			<div class="grid_container">
 				<section class="box_transparent">
 					<h3 class="footer_heading">OPNUNARTÍMI</h3>
