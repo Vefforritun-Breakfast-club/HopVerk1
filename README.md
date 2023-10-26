@@ -5,7 +5,7 @@ npm lint er núna til staðar
 
 þeir sem unnu þetta verkefni eru:
 Elías Lúðvíksson: ell9@hi.is. 
-Github: Skatturinn
+Github: @Skatturinn
 David Abew-Baidoo: daa32@hi.is. 
 Github: kwamenaabew
 Arnaldur Ólafsson: aro42@hi.is.
