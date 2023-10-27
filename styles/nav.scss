@@ -1,0 +1,79 @@
+.logo {
+	grid-column-end: span 4;
+}
+
+.logo a {
+	display: flex;
+	align-items: center;
+	gap: var(--logo-gap);
+	width: fit-content;
+}
+
+.logo a svg {
+	display: flex;
+
+}
+
+.logo a h1 {
+	margin: 0;
+	font-family: var(--font-family-logo);
+	font-size: 2.5em;
+}
+
+.searchbar {
+	grid-column-end: span 4;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	margin: 10px 0;
+	position: relative;
+	justify-content: end;
+}
+
+.searchbar input {
+	flex: 1;
+	height: 2.5em;
+	padding: 0.5em;
+	border: var(--black) var(--border-size) solid;
+	border-radius: var(--border-radius);
+}
+
+.magnify-glass {
+	position: absolute;
+	z-index: 1;
+	margin: 0 0.5em 0 0;
+
+}
+
+.navigation {
+	grid-column-end: span 3;
+}
+
+.navigation menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shopping-cart-grid {
+	display: flex;
+	grid-template-columns: repeat(18, minmax(0, 1fr));
+	grid-template-rows: repeat(18, minmax(0, 4px));
+	width: 100%;
+	align-items: center;
+	justify-content: end;
+}
+
+.shopping-cart {
+	width: 50px;
+	height: 50px;
+	grid-column-start: 12;
+	justify-self: end;
+}
+
+.link-menu-button {
+	display: none;
+	width: 0;
+	height: 0;
+}
+

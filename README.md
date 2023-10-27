@@ -13,14 +13,11 @@ Github: @Add1Padd1 <br>
 Sigurður Þór Jósefsson: stj46@hi.is. <br>
 Github: @SigurdurThorJ <br>
 
-* Everyone has a .css file.
-	* Uncomment the style link sheet comment and put your name in the .css name
-	* pick a .html you want to work on
-	* if u need help. use discord, email. whatever
-
-* All content. Widths, fonts, font size, font line height, is all on the figma.
-	*  Being pixel perfect should be easier than just a random png file.
-	
+Forsíðan index.html er rót skjalsins. <br>
+Mappan pages inniheldur allar hinar síðurnar. <br>
+Mappan styles inniheldur allar scss skrár. Með ýsandi nöfnum. <br>
+Upprunalega voru allir með sína eigin .css skrá sem var svo dreift í .scss <br>
+Þeim er svo importað með stlyes.scss í styles.css með npm run sass. <br>
 
 * Punkar varðandi samræmi kóða.
 	* tab er 4 spaces

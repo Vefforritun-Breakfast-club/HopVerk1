@@ -1,0 +1,31 @@
+.bottom {
+	grid-area: bottom;
+	background-color: var(--dark-brown);
+	color: var(--light);
+	line-height: 1.5em;
+	width: 100%;
+	position: relative;
+	grid-template-columns: 100%;
+}
+
+.bottom .grid-container {
+	align-items: start;
+	padding: 2.25rem 0 0;
+}
+
+.footer-heading {
+	padding: 2rem 0 0;
+	margin: 0 0 -0.5rem;
+	border-bottom: 2px var(--latte) solid;
+	line-height: 1em;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.postscript {
+	font-size: 14px;
+	text-align: center;
+	line-height: 2em;
+	border-top: var(--border-size) var(--brown) solid;
+	width: 100%;
+}

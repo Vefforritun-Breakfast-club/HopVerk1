@@ -1,0 +1,45 @@
+:root {
+	/* sizes */
+	--offset: 15px;
+	--border-radius: 5px;
+	--border-size: 1px;
+	--gap-size: 30px;
+	--font-size: 16px;
+	--spacing: 1rem;
+	--logo-gap: 10px;
+	--columns: 12;
+	--site-max-width: 1440px;
+	--grid-column-width: calc((100% / var(--columns)) - var(--gap-size));
+	--offset: 15px;
+	--gutter: 30px;
+	--columns: 12;
+
+	/* colors */
+	--latte: #e1cec2;
+	--dark-brown: #3c2a1e;
+	--brown: #6f4e37;
+	--white: #fff;
+	--light: #FEFEFE;
+	--top-grey: #ecebec;
+	--top-grey2: #f2f1f3;
+	--black: #000;
+
+	/* fonts */
+	--font-base-size: 1rem;
+	--font-family-base: 'Lato', sans-serif;
+	--font-family-logo: 'Lora', serif;
+	
+}
+
+html,
+input,
+select,
+button {
+	font-family: var(--font-family-base);
+}
+
+li {
+	font-size: var(--font_size);
+	list-style: none;
+}
+

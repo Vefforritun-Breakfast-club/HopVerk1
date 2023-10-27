@@ -1,0 +1,20 @@
+.label-input-order {
+	grid-column-end: span 3;
+	margin: -0.5em 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.label-input-order input {
+	flex: 1;
+	height: 2.5em;
+	padding: 0.75em;
+	border: var(--black) var(--border-size) solid;
+	border-radius: var(--border-radius);
+}
+
+.label-input-order label {
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0;
+}

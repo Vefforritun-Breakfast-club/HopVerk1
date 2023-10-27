@@ -1,0 +1,48 @@
+
+.title-products {
+	padding: 1% 0% 0%;
+	font-size: 60px;
+	grid-column-end: span 12;
+}
+
+.span12 {
+	grid-column-end: span 12;
+	padding: 0 0 2%;
+}
+
+.site-sort-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 16px;
+	padding-top: 0.3%;
+}
+
+.site-sort-name {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.site-sort-list li button {
+	background-color: var(--latte);
+	border-radius: var(--border-radius);
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	border: 0;
+	flex: 1;
+	padding: 0.25em;
+}
+
+.product-site .latte-slice {
+	padding: 2% 0;
+}
+
+.product-site {
+	padding: var(--gap-size) 0 0 0;
+}

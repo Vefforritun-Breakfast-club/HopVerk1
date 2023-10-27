@@ -1,0 +1,44 @@
+.link-menu .top2bottom {
+	grid-template-rows: 60px auto auto;
+	align-items: center;
+}
+
+.link-menu .logo {
+	grid-column-end: span 5;
+}
+
+.link-menu .bottom {
+	background-color: var(--white);
+}
+
+.link-menu .searchbar {
+	grid-column-end: span 12;
+	padding: 1em 0;
+}
+
+.link-menu .link-menu-button {
+	display: flex;
+	width: 28px;
+	height: 20px;
+	grid-column-start: 12;
+	overflow: hidden;
+	justify-self: end;
+}
+
+.link-menu .shopping-cart {
+	grid-column-start: 11;
+	justify-self: end;
+}
+
+.link-menu .bottom .grid-container {
+	padding: 0;
+}
+
+.link-menu nav {
+	margin: 0.5em 0 0;
+	width: auto;
+	height: auto;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

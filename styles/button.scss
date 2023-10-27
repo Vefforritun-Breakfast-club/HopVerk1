@@ -1,0 +1,18 @@
+.vorumynd-box button {
+	background-color: --white;
+	padding: 0.75rem;
+	border-radius: var(--border-radius);
+	border: var(--brown) var(--border-size) solid;
+	color: var(--dark-brown);
+	font-weight: 700;
+    flex-basis: 50%;
+    grid-column-end: span 6;
+}
+
+.buy-matrix {
+	background-color: var(--white);
+	padding: 0.75em;
+	border-radius: var(--border-radius);
+	border: var(--brown) var(--border-size) solid;
+	color: var(--dark-brown);
+}
