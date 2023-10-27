@@ -715,10 +715,10 @@ figure figcaption h3 {
 /* auka 1*/
 @media (max-width: 1120px) {
   .order-box img {
-    grid-column-end: span 2;
+    grid-column-end: span 1;
   }
   .order-box a {
-    grid-column-end: span 2;
+    grid-column-end: span 3;
   }
 }
 @media (max-width: 820px) {
