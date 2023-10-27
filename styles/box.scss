@@ -22,7 +22,7 @@
 }
 
 .box button {
-	background-color: --white;
+	background-color: var(--white);
 	padding: 0.5rem;
 	border-radius: var(--border-radius);
 	border: var(--brown) var(--border-size) solid;

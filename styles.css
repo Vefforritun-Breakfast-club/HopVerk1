@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +17,12 @@ html {
   font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: "url(./fonts/Lora/Lora-VariableFont_wght.ttf)";
+  src: url("./fonts/Lora/Lora-VariableFont_wght.ttf");
 }
 /* restin er Lato 400 */
 @font-face {
   font-family: "Lato";
-  src: "url(./fonts/Lato/Lato-Regular.ttf)";
+  src: url("./fonts/Lato/Lato-Regular.ttf");
 }
 :root {
   /* sizes */
@@ -37,6 +36,9 @@ html {
   --columns: 12;
   --site-max-width: 1440px;
   --grid-column-width: calc((100% / var(--columns)) - var(--gap-size));
+  --offset: 15px;
+  --gutter: 30px;
+  --columns: 12;
   /* colors */
   --latte: #e1cec2;
   --dark-brown: #3c2a1e;
@@ -52,43 +54,16 @@ html {
   --font-family-logo: "Lora", serif;
 }
 
-:root {
-  --offset: 15px;
-  --gutter: 30px;
-  --columns: 12;
-  --grid-color: hsla(0, 0%, 0%, 0.05);
-  --grid-repeating-width: calc(100% / var(--columns));
-  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
-  --grid-background-width: calc(100% + var(--gutter));
-  --grid-background-columns: repeating-linear-gradient(
-    to right,
-    var(--grid-color),
-    var(--grid-color) var(--grid-column-width),
-    transparent var(--grid-column-width),
-    transparent var(--grid-repeating-width)
-  );
+html,
+input,
+select,
+button {
+  font-family: var(--font-family-base);
 }
 
-html {
-  position: relative;
-}
-
-html::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: calc(100% - 2 * var(--offset));
-  max-width: calc(var(--site-max-width) - 2 * var(--offset));
-  min-height: 100vh;
-  background-image: var(--grid-background-columns);
-  background-size: var(--grid-background-width) 100%;
-  z-index: 1000;
-  pointer-events: none;
+li {
+  font-size: var(--font_size);
+  list-style: none;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -150,7 +125,7 @@ img {
   flex: 1;
   height: 2.5em;
   padding: 0.75em;
-  border: --black var(--border-size) solid;
+  border: var(--black) var(--border-size) solid;
   border-radius: var(--border-radius);
 }
 
@@ -199,7 +174,7 @@ img {
 }
 
 .box button {
-  background-color: --white;
+  background-color: var(--white);
   padding: 0.5rem;
   border-radius: var(--border-radius);
   border: var(--brown) var(--border-size) solid;
@@ -275,7 +250,7 @@ figure figcaption h3 {
 }
 
 .vorumynd-box button {
-  background-color: white;
+  background-color: --white;
   padding: 0.75rem;
   border-radius: var(--border-radius);
   border: var(--brown) var(--border-size) solid;
@@ -285,27 +260,14 @@ figure figcaption h3 {
   grid-column-end: span 6;
 }
 
-/* Reset og border-box á allt */
-/* 						font						 */
-/* logo font er Lora, 700 */
-/* 						settings 						*/
-/* 						global						 */
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-/* 						box 					*/
-/* 				grid containter 				*/
-/* 						top 					*/
-/* 	Navigation bar	*/
-/* 						middle 					*/
-/* 						bottom 					*/
-/* 						scaling 				*/
-/* Sigurðru */
-/* https://css-tricks.com/building-css-grid-overlay/ */
-/* Elías */
-/* david /*
-/**Matrix stuff**/
-/* skalanleiki */
-/* arnaldur */
-/* skalanleiki */
+.buy-matrix {
+  background-color: var(--white);
+  padding: 0.75em;
+  border-radius: var(--border-radius);
+  border: var(--brown) var(--border-size) solid;
+  color: var(--dark-brown);
+}
+
 .top2bottom {
   display: grid;
   grid-template-areas: "top" "middle" "bottom";
@@ -485,7 +447,7 @@ figure figcaption h3 {
   flex: 1;
   height: 2.5em;
   padding: 0.5em;
-  border: --black --border-size solid;
+  border: var(--black) var(--border-size) solid;
   border-radius: var(--border-radius);
 }
 
@@ -577,7 +539,7 @@ figure figcaption h3 {
   margin: 0 0 auto;
   width: 0;
   height: 0;
-  border-top: 3em solid --white;
+  border-top: 3em solid var(--white);
   border-right: 100vw solid transparent;
 }
 
@@ -585,7 +547,7 @@ figure figcaption h3 {
   margin: auto 0 0;
   width: 0;
   height: 0;
-  border-bottom: 3.5em solid --white;
+  border-bottom: 3.5em solid var(--white);
   border-left: 100vw solid transparent;
 }
 
@@ -739,6 +701,7 @@ figure figcaption h3 {
     letter-spacing: 0;
   }
   .box-transparent .skoda {
+    text-align: center;
     margin: 0 auto;
   }
   .frontpage-grid-layout .white {
@@ -911,7 +874,7 @@ figure figcaption h3 {
 }
 
 .link-menu .bottom {
-  background-color: --white;
+  background-color: var(--white);
 }
 
 .link-menu .searchbar {
@@ -1047,10 +1010,6 @@ figure figcaption h3 {
 .paragraph {
   font-size: 20px;
   line-height: 1.6em;
-}
-
-.vorutexti {
-  font-size: 2em;
 }
 
 .column3to11 .heading-nyr-class {

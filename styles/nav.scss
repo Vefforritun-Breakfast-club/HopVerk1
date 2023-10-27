@@ -34,7 +34,7 @@
 	flex: 1;
 	height: 2.5em;
 	padding: 0.5em;
-	border: --black (--border-size) solid;
+	border: var(--black) var(--border-size) solid;
 	border-radius: var(--border-radius);
 }
 
