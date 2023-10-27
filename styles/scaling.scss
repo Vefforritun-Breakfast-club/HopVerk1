@@ -143,11 +143,11 @@
 /* auka 1*/
 @media (max-width: 1120px) {
 	.order-box img {
-		grid-column-end: span 2;
+		grid-column-end: span 1;
 	}
 
 	.order-box a {
-		grid-column-end: span 2;
+		grid-column-end: span 3;
 	}
 }
 
@@ -165,11 +165,11 @@
 	}
 
 	.order-box a {
-		grid-column-end: span 3;
+		grid-column-end: span 2;
 	}
 
 	.order-box img {
-		grid-column-end: span 1;
+		grid-column-end: span 2;
 	}
 }
 
