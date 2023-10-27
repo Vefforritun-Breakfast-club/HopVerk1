@@ -1,24 +1,25 @@
 :root {
 	/* sizes */
 	--offset: 15px;
-	--border_radius: 5px;
-	--border_size: 1px;
-	--gap_size: 30px;
-	--font_size: 16px;
+	--border-radius: 5px;
+	--border-size: 1px;
+	--gap-size: 30px;
+	--font-size: 16px;
 	--spacing: 1rem;
-	--logo_gap: 10px;
+	--logo-gap: 10px;
 	--columns: 12;
-	--site_max_width: 1440px;
-	--grid-column-width: calc((100% / var(--columns)) - var(--gap_size));
+	--site-max-width: 1440px;
+	--grid-column-width: calc((100% / var(--columns)) - var(--gap-size));
 
 	/* colors */
 	--latte: #e1cec2;
 	--dark-brown: #3c2a1e;
 	--brown: #6f4e37;
-	--white: #ffffff;
+	--white: #fff;
 	--light: #FEFEFE;
 	--top-grey: #ecebec;
 	--top-grey2: #f2f1f3;
+	--black: #000;
 
 	/* fonts */
 	--font-base-size: 1rem;
@@ -61,7 +62,7 @@
     margin-left: auto;
     
     width: calc(100% - (2 * var(--offset)));
-    max-width: calc(var(--site_max_width) - (2 * var(--offset)));
+    max-width: calc(var(--site-max-width) - (2 * var(--offset)));
     min-height: 100vh;
     background-image: var(--grid-background-columns);
     background-size: var(--grid-background-width) 100%;

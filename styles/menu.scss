@@ -1,15 +1,15 @@
 /* fara yfir */
-.menu_box {
+.menu-box {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 	gap: 0.5em;
 }
 
-.menu_box li {
+.menu-box li {
 	font-size: 60px;
 	font-weight: 400;
 	line-height: 110px;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 	text-align: center;
 }

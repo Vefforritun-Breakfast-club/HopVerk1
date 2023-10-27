@@ -5,7 +5,7 @@
 .logo a {
 	display: flex;
 	align-items: center;
-	gap: var(--logo_gap);
+	gap: var(--logo-gap);
 	width: fit-content;
 }
 
@@ -34,11 +34,11 @@
 	flex: 1;
 	height: 2.5em;
 	padding: 0.5em;
-	border: black var(--border_size) solid;
-	border-radius: var(--border_radius);
+	border: --black (--border-size) solid;
+	border-radius: var(--border-radius);
 }
 
-.magnify_glass {
+.magnify-glass {
 	position: absolute;
 	z-index: 1;
 	margin: 0 0.5em 0 0;
@@ -55,7 +55,7 @@
 	align-items: center;
 }
 
-.shopping_cart_grid {
+.shopping-cart-grid {
 	display: flex;
 	grid-template-columns: repeat(18, minmax(0, 1fr));
 	grid-template-rows: repeat(18, minmax(0, 4px));
@@ -64,14 +64,14 @@
 	justify-content: end;
 }
 
-.shopping_cart {
+.shopping-cart {
 	width: 50px;
 	height: 50px;
 	grid-column-start: 12;
 	justify-self: end;
 }
 
-.link_menu_button {
+.link-menu-button {
 	display: none;
 	width: 0;
 	height: 0;

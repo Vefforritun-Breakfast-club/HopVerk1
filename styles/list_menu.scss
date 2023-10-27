@@ -1,22 +1,22 @@
-.link_menu .top2bottom {
+.link-menu .top2bottom {
 	grid-template-rows: 60px auto auto;
 	align-items: center;
 }
 
-.link_menu .logo {
+.link-menu .logo {
 	grid-column-end: span 5;
 }
 
-.link_menu .bottom {
-	background-color: white;
+.link-menu .bottom {
+	background-color: --white;
 }
 
-.link_menu .searchbar {
+.link-menu .searchbar {
 	grid-column-end: span 12;
 	padding: 1em 0;
 }
 
-.link_menu .link_menu_button {
+.link-menu .link-menu-button {
 	display: flex;
 	width: 28px;
 	height: 20px;
@@ -25,17 +25,17 @@
 	justify-self: end;
 }
 
-.link_menu .shopping_cart {
+.link-menu .shopping-cart {
 	grid-column-start: 11;
 	justify-self: end;
 }
 
-.link_menu .bottom .grid_container {
+.link-menu .bottom .grid-container {
 	padding: 0;
 }
 
-.link_menu nav {
-	margin: 0.5em 0 0 0;
+.link-menu nav {
+	margin: 0.5em 0 0;
 	width: auto;
 	height: auto;
 	align-items: center;

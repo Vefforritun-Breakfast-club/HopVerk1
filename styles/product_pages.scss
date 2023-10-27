@@ -1,17 +1,17 @@
-.product_tags {
+.product-tags {
 	display: flex;
 	flex-direction: row;
-	gap: calc(2*var(--border_radius));
+	gap: calc(2*var(--border-radius));
 }
 
-.product_tags li {
+.product-tags li {
 	background-color: var(--latte);
-	border-radius: var(--border_radius);
-	padding: var(--border_radius);
+	border-radius: var(--border-radius);
+	padding: var(--border-radius);
 	font-size: 14px;
 }
 
-.column3to11 .heading_nyr_class {
+.column3to11 .heading-nyr-class {
     font-size: 2em;
     font-weight: 400;
 }
